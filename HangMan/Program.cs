@@ -61,6 +61,7 @@ namespace HangMan
                         guess[p] = '*';
 
                 }
+                Console.WriteLine("Guess one of the capitals of the World:");
                 Console.WriteLine(guess);
 
                 bool game = true;
@@ -147,7 +148,7 @@ namespace HangMan
                            
                         }
                         else
-                            Console.WriteLine("Choose on more time. [letter/word]");
+                            Console.WriteLine("Choose one more time. [letter/word]");
                         if (win == true)
                             break;
                     }
@@ -158,22 +159,22 @@ namespace HangMan
                     {
                         string country = listCountries[idx];
                         Console.WriteLine("The game is over. Hint: The capital of " + country);
-                        Console.WriteLine("Do you want try one more time? [YES/NO]");
+                        Console.WriteLine("Do you want try one more time? [yes/no]");
                         while (question2)
                         {
                             string answer2 = Console.ReadLine();
-                            if (answer2 == "YES")
+                            if (answer2 == "yes")
                             {
                                 game = true;
                                 question2 = false;
                             }
-                            else if (answer2 == "NO")
+                            else if (answer2 == "no")
                             {
                                 game = false;
                                 question2 = false;
                             }
                             else
-                                Console.WriteLine("Choose on more time. [YES/NO]");
+                                Console.WriteLine("Choose one more time. [yes/no]");
                         }
                     }
 
@@ -185,23 +186,23 @@ namespace HangMan
                 }
                 
 
-                Console.WriteLine("Do you want start new game? [YES/NO]");
+                Console.WriteLine("Do you want start new game? [yes/no]");
                 bool question3 = true;
                 while (question3)
                 {
                     string answer3 = Console.ReadLine();
-                    if (answer3 == "YES")
+                    if (answer3 == "yes")
                     {
                         newGame = true;
                         question3 = false;
                     }
-                    else if (answer3 == "NO")
+                    else if (answer3 == "no")
                     {
                         newGame = false;
                         question3 = false;
                     }
                     else
-                        Console.WriteLine("Choose on more time. [YES/NO]");
+                        Console.WriteLine("Choose one more time. [yes/no]");
                 }
 
             } 
